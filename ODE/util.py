@@ -30,7 +30,7 @@ def vField(xmin, xmax, ymin, ymax, dX_dt, Norm):
     # Drow direction fields, using matplotlib 's quiver function
     plt.title('Trajectories and direction fields')
     Q = plt.quiver(X1, Y1, DX1, DY1, color="C0")
-    plt.xlabel('u')
-    plt.ylabel('y')
+    plt.xlabel('y_1')
+    plt.ylabel('y_2')
     plt.grid()
 
