@@ -7,8 +7,7 @@ import matplotlib as mpl
 mpl.rcParams['figure.figsize'] = (7,7)
 
 
-def solveODE(dX_dt, y0, tstart, tstop):
-    t  = np.linspace(tstart, tstop, 1000)
+def solveODE(dX_dt, y0, t):
     X, infodict = int.odeint(dX_dt, y0, t, full_output=True)
     return(X, infodict)
 
