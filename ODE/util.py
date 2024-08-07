@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy as sci
+from scipy import signal
 import scipy.integrate as int
 import scipy.linalg as lin
 import matplotlib as mpl
@@ -33,3 +34,8 @@ def vField(xmin, xmax, ymin, ymax, dX_dt, Norm):
     plt.ylabel('y_2')
     plt.grid()
 
+def plotSpec(x):
+    f_p, P_p = signal.periodogram(x 1, 'hann', scaling='spectrum')
+    plt.semilogy(f_p, np.sqrt(P_p))
+    plt.ylim(1e-3, 1e3)
+    plt.grid(True)
