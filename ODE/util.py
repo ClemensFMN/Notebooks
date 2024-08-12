@@ -35,7 +35,7 @@ def vField(xmin, xmax, ymin, ymax, dX_dt, Norm):
     plt.grid()
 
 def plotSpec(x):
-    f_p, P_p = signal.periodogram(x 1, 'hann', scaling='spectrum')
+    f_p, P_p = signal.periodogram(x, 1, 'hann', scaling='spectrum')
     plt.semilogy(f_p, np.sqrt(P_p))
     plt.ylim(1e-3, 1e3)
     plt.grid(True)
