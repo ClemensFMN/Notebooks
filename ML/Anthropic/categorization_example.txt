@@ -1,0 +1,17 @@
+Categorize the following statement
+
+<statement>
+I hate my life
+</statement>
+
+If the sentiment is positive, return positive, if it is negative, return negative.
+
+Here is an example with an ideal response
+
+<example>
+I love Mondays
+</example>
+
+<ideal_output>
+positive
+</ideal_output>
